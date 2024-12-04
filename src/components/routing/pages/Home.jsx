@@ -1,12 +1,13 @@
 import React from "react";
-import FormsPage from "./FormsPage";
+import Navbar from "../Navbar";
+
 
 const Home = () => {
   return (
     <>
-      
+      <Navbar/>
       <h2>Home Page</h2>
-      <FormsPage/>
+    
       
       
 </>

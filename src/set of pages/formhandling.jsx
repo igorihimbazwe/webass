@@ -1,9 +1,6 @@
 import React from "react";
-import LoginForm from "../components/formhandl/loginf";
-import SingleInputForm from "../components/formhandl/singleform";
-import ValidationForm from "../components/formhandl/valiform";
-import MultiStepForm from "../components/formhandl/multistepform";
-import CheckboxForm from "../components/formhandl/checkboxform";
+
+import { LoginForm,SingleInputForm,ValidationForm,MultiStepForm,CheckboxForm } from "../components/formhandl/forms3";
 
 
 const FormHandle = () => {
