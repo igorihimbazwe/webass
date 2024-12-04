@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../regi.css"
 
 const DriverRegistration = () => {
   const [formData, setFormData] = useState({

@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+import Home from "../components/routing/pages/Home";
+
+
 
 const Routing = () => {
     return (
-        <Router>
-            <Routes>
-                
-            </Routes>
-        </Router>
+        <>
+            <Home />
+        </>
     )
 }
+
+export default Routing;

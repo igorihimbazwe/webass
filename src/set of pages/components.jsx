@@ -1,10 +1,5 @@
 import React from "react";
-import WelcomeMessage from "../components/components/welcom";
-import CurrentDate from "../components/memo/todayDate";
-import Hobbiesp from "../components/components/hobbies";
-import Button from "../components/components/button";
-import ProfileCard from "../components/components/profileCard";
-import List from "../components/components/displayList";
+import { WelcomeMessage,CurrentDate,Hobbiesp,Button,ProfileCard,List } from "../components/components/components1";
 
 
 const Componets = () => {
@@ -13,7 +8,7 @@ const Componets = () => {
         <WelcomeMessage />
       <CurrentDate />
       <Hobbiesp />
-      <Button text={"click me"} color={"green"} />
+      <Button text={"click me"} color={"red"} />
       <ProfileCard name={"Igor"} age={21} email={"igor@gmail.com"} />
             <List />
             </>

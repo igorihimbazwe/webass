@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../regi.css"
+
 
 const LecturerRegistration = () => {
   const [formData, setFormData] = useState({
