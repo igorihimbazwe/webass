@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+
+  button {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .toggle-button {
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-button.on {
+    background-color: #28a745;
+  }
+  
+  .toggle-button.on:hover {
+    background-color: #218838;
+  }
+  
+  .toggle-button.off {
+    background-color: #dc3545;
+  }
+  
+  .toggle-button.off:hover {
+    background-color: #c82333;
+  }
+  
+  
+
+  .counter {
+    margin: 20px 0;
+  }
+  
+  .counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .counter-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+  }
+  
+  .counter-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hover Box */
+  .hover-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Input Form */
+  .input-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .text-input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    margin: 20px 0;
+  }
+  
+  .dropdown-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px auto;
+  }
+  
+  .dropdown-item {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
