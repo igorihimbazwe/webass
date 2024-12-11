@@ -46,6 +46,12 @@ const LecturerRegistration = () => {
     e.preventDefault();
     if (!errors.email && !errors.phone) {
       console.log("Lecturer Registration Data", formData);
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        phone: "",
+      })
     }
   };
 
