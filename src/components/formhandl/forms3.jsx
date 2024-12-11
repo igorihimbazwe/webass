@@ -12,6 +12,8 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login Data:", formData);
+
+    setFormData({ username: "", password: "" });
   };
 
   return (
@@ -44,9 +46,15 @@ const LoginForm = () => {
 const SingleInputForm = () => {
   const [value, setValue] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Entered Value:", value);
+
+  };
+
   return (
     <div className="form-container">
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Enter something..."
@@ -54,6 +62,7 @@ const SingleInputForm = () => {
           onChange={(e) => setValue(e.target.value)}
           className="input-field"
         />
+        <button type="submit" className="submit-btn">Submit</button>
       </form>
       <p>Entered Value: {value}</p>
     </div>
@@ -86,6 +95,10 @@ const ValidationForm = () => {
 
     if (isValid) {
       console.log("Form Submitted:", { email, password });
+
+    
+      setEmail("");
+      setPassword("");
     }
   };
 
@@ -130,6 +143,10 @@ const MultiStepForm = () => {
 
   const handleSubmit = () => {
     console.log("Form Data:", formData);
+
+  
+    setFormData({ name: "", address: "", payment: "" });
+    setStep(1);
   };
 
   return (
@@ -193,21 +210,29 @@ const CheckboxForm = () => {
     );
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Selected Options:", selectedOptions);
+  };
+
   return (
     <div className="form-container">
       <h2>Select Your Options</h2>
-      <div>
-        {["Option 1", "Option 2", "Option 3"].map((option) => (
-          <label key={option} className="checkbox-label">
-            <input
-              type="checkbox"
-              checked={selectedOptions.includes(option)}
-              onChange={() => handleCheckboxChange(option)}
-            />
-            {option}
-          </label>
-        ))}
-      </div>
+      <form onSubmit={handleSubmit}>
+        <div>
+          {["Option 1", "Option 2", "Option 3"].map((option) => (
+            <label key={option} className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={selectedOptions.includes(option)}
+                onChange={() => handleCheckboxChange(option)}
+              />
+              {option}
+            </label>
+          ))}
+        </div>
+        <button type="submit" className="submit-btn">Submit</button>
+      </form>
       <p>Selected Options: {selectedOptions.join(", ") || "None"}</p>
     </div>
   );

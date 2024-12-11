@@ -17,6 +17,12 @@ const DriverRegistration = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Driver Registration Data", formData);
+    setFormData({
+      name: "",
+      licenseNumber: "",
+      phone: "",
+      vehicleType: "car",
+    })
   };
 
   return (

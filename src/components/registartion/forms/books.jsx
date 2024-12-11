@@ -33,6 +33,12 @@ const BookRegistration = () => {
     e.preventDefault();
     if (!errors.publishedYear) {
       console.log("Book Registration Data", formData);
+      setFormData({
+        title: "",
+        author: "",
+        isbn: "",
+        publishedYear: "",
+      })
     }
   };
 

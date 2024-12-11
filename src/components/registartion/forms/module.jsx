@@ -32,6 +32,12 @@ const ModuleRegistration = () => {
     e.preventDefault();
     if (!errors.credits) {
       console.log("Module Registration Data", formData);
+      setFormData({
+        moduleName: "",
+        moduleCode: "",
+        description: "",
+        credits: "",
+      })
     }
   };
 

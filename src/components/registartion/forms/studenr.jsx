@@ -34,6 +34,13 @@ const StudentRegistration = () => {
     e.preventDefault();
     if (!errors.studentId) {
       console.log("Student Registration Data", formData);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        studentId: "",
+        dob: "",
+      })
     }
   };
 
